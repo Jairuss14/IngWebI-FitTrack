@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iniciar sesión · FitTrack</title>
+  <meta name="description" content="Accede a tu cuenta de FitTrack." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="FitTrack inicio">
+        <span class="brand-mark">FT</span>
+        <span class="brand-name">FitTrack</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html#features">Funcionalidades</a>
+        <a href="index.html#how">Cómo funciona</a>
+        <a class="btn btn--outline" href="register.html">Crear cuenta</a>
+      </nav>
+
+      <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="auth">
+    <div class="container auth-grid">
+      <section class="auth-card" aria-label="Formulario de login">
+        <h1>Iniciar sesión</h1>
+        <p class="section-lead">Accede para ver tu dashboard.</p>
+
+        <!-- Preparado para PHP más adelante: action="php/login.php" method="POST" -->
+        <form id="loginForm" class="form" novalidate>
+          <div class="field">
+            <label for="loginUser">Nombre de usuario</label>
+            <input
+              id="loginUser"
+              name="username"
+              type="text"
+              autocomplete="username"
+              placeholder="Tu usuario"
+              required
+            />
+            <p class="error" id="err-loginUser" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="loginPass">Contraseña</label>
+            <input
+              id="loginPass"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              placeholder="••••••••"
+              required
+            />
+            <p class="error" id="err-loginPass" aria-live="polite"></p>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn--primary btn--full" type="submit">
+              Entrar
+            </button>
+            <p class="form-alt">
+              ¿No tienes cuenta? <a class="link" href="register.html">Regístrate</a>
+            </p>
+          </div>
+
+          <p class="form-success" id="loginSuccess" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <aside class="auth-aside" aria-label="Información de acceso">
+        <div class="aside-card">
+          <h2>Demo (sin backend aún)</h2>
+          <p class="hint">
+            De momento el login es visual (front). Cuando metamos PHP:
+            validaremos en servidor y crearemos sesión segura.
+          </p>
+          <p class="hint">
+            Tip: En tu README puedes explicar qué parte funciona en cliente y qué parte se añadirá en backend.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> FitTrack · Ingeniería Web 1</p>
+      <p class="footer-links">
+        <a href="index.html#features">Funcionalidades</a>
+        <a href="index.html#how">Cómo funciona</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

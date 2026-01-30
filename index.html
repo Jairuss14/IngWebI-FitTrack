@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FitTrack — Tu registro de entrenamientos</title>
+  <meta name="description" content="Registra tus entrenamientos, revisa tu progreso y mantén hábitos saludables con FitTrack." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="FitTrack inicio">
+        <span class="brand-mark">FT</span>
+        <span class="brand-name">FitTrack</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#features">Funcionalidades</a>
+        <a href="#how">Cómo funciona</a>
+        <a href="#cta">Empezar</a>
+        <a class="btn btn--outline" href="login.html">Iniciar sesión</a>
+      </nav>
+
+      <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="pill">Proyecto Full Stack · Ingeniería Web</p>
+          <h1>Registra tus entrenamientos.<br />Mide tu progreso.</h1>
+          <p class="lead">
+            FitTrack es una WebApp para registrar actividades deportivas,
+            consultar tu historial deportivo y obtener métricas personalizadas .
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="register.html">Crear cuenta</a>
+            <a class="btn btn--ghost" href="#features">Ver funcionalidades</a>
+          </div>
+            
+          <!--
+            <div class="hero-stats" aria-label="Resumen de beneficios">
+            <div class="stat">
+              <span class="stat-num">Registra todas tus actividades</span>
+              <span class="stat-label"></span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">Establece objetivos diarios</span>
+              <span class="stat-label"></span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">Obten métricas personalizadas</span>
+              <span class="stat-label"></span>
+            </div>
+          </div> 
+          -->
+        </div>
+
+        <div class="hero-card" aria-label="Vista previa del dashboard">
+          <div class="card">
+            <div class="card-header">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="card-title">Dashboard</span>
+            </div>
+
+            <div class="card-body">
+              <div class="mini-row">
+                <div class="mini">
+                  <p class="mini-k">Objetivo Diario</p>
+                  <p class="mini-v">85 min / 90 min</p>
+                </div>
+                <div class="mini">
+                  <p class="mini-k">Fecha</p>
+                  <p class="mini-v"><span id="day"></span></p>
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="list-item">
+                  <span class="tag tag--red">Gym</span>
+                  <span class="li-main">Fuerza · 50 min</span>
+                  <span class="li-sub">Pierna</span>
+                </div>
+                <div class="list-item">
+                  <span class="tag">Bici</span>
+                  <span class="li-main">Cardio · 20 min</span>
+                  <span class="li-sub">Zona 2</span>
+                </div>
+                <div class="list-item">
+                  <span class="tag">Running</span>
+                  <span class="li-main">Tempo · 15 min</span>
+                  <span class="li-sub">RPE 7</span>
+                </div>
+              </div>
+
+              <div class="card-cta">
+                <p class="btn btn--primary btn--full">
+                  Añadir actividad
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Funcionalidades clave</h2>
+        <p class="section-lead">Este proyecto contiene las siguientes funcionalidades.</p>
+
+        <div class="features">
+          <article class="feature">
+            <h3>Registro y login</h3>
+            <p>Usuarios con contraseña segura (hash) y sesiones.</p>
+          </article>
+
+          <article class="feature">
+            <h3>Alta de actividades</h3>
+            <p>Formulario con validación en cliente y servidor.</p>
+          </article>
+
+          <article class="feature">
+            <h3>Historial</h3>
+            <p>Listado por usuario con filtros básicos (tipo/fecha).</p>
+          </article>
+
+          <article class="feature">
+            <h3>Fetch + JSON</h3>
+            <p>Envío y carga dinámica de datos sin recargar la página.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW -->
+    <section id="how" class="section section--alt">
+      <div class="container how">
+        <div>
+          <h2>Cómo funciona</h2>
+          <p class="section-lead">
+            Una arquitectura sencilla: HTML/CSS + JS (DOM) + PHP + MySQL.
+          </p>
+        </div>
+
+        <ol class="steps">
+          <li><span class="step-num">1</span> Te registras e inicias sesión.</li>
+          <li><span class="step-num">2</span> Añades actividades desde el dashboard.</li>
+          <li><span class="step-num">3</span> PHP valida y guarda en MySQL con consultas preparadas.</li>
+          <li><span class="step-num">4</span> El dashboard se actualiza con Fetch (JSON).</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="section">
+      <div class="container cta">
+        <div class="cta-box">
+          <h2>¿Listo para empezar?</h2>
+          <p>Crea una cuenta y empieza a registrar tus entrenos hoy.</p>
+          <div class="cta-actions">
+            <a class="btn btn--primary" href="register.html">Crear cuenta</a>
+            <a class="btn btn--outline" href="login.html">Iniciar sesión</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> FitTrack · Ingeniería Web 1</p>
+      <p class="footer-links">
+        <a href="#features">Funcionalidades</a>
+        <a href="#how">Cómo funciona</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

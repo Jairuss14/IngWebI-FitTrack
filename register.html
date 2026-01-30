@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crear cuenta · FitTrack</title>
+  <meta name="description" content="Crea tu cuenta en FitTrack." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="FitTrack inicio">
+        <span class="brand-mark">FT</span>
+        <span class="brand-name">FitTrack</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html#features">Funcionalidades</a>
+        <a href="index.html#how">Cómo funciona</a>
+        <a class="btn btn--outline" href="login.html">Iniciar sesión</a>
+      </nav>
+
+      <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="auth">
+    <div class="container auth-grid">
+      <section class="auth-card" aria-label="Formulario de registro">
+        <h1>Crear cuenta</h1>
+        <p class="section-lead">Regístrate para empezar a guardar tus entrenamientos.</p>
+
+        <!-- Preparado para PHP más adelante: action="php/register.php" method="POST" -->
+        <form id="registerForm" class="form" novalidate>
+          <div class="field">
+            <label for="username">Nombre de usuario</label>
+            <input
+              id="username"
+              name="username"
+              type="text"
+              autocomplete="username"
+              placeholder="Ej: jairo_ibz"
+              minlength="3"
+              maxlength="20"
+              required
+            />
+            <p class="field-hint">3–20 caracteres. Letras, números, guion o guion bajo.</p>
+            <p class="error" id="err-username" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="dob">Fecha de nacimiento</label>
+            <input
+              id="dob"
+              name="dob"
+              type="date"
+              required
+            />
+            <p class="field-hint">Debes ser mayor de edad (+18).</p>
+            <p class="error" id="err-dob" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="password">Contraseña</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="new-password"
+              placeholder="••••••••"
+              required
+            />
+            <p class="field-hint">Mínimo 8 caracteres, con mayúscula, minúscula y número.</p>
+            <p class="error" id="err-password" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="password2">Verificar contraseña</label>
+            <input
+              id="password2"
+              name="password2"
+              type="password"
+              autocomplete="new-password"
+              placeholder="••••••••"
+              required
+            />
+            <p class="error" id="err-password2" aria-live="polite"></p>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn--primary btn--full" type="submit">
+              Crear cuenta
+            </button>
+            <p class="form-alt">
+              ¿Ya tienes cuenta? <a class="link" href="login.html">Inicia sesión</a>
+            </p>
+          </div>
+
+          <p class="form-success" id="registerSuccess" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <aside class="auth-aside" aria-label="Información del registro">
+        <div class="aside-card">
+          <h2>Qué valida este formulario</h2>
+          <ul class="checklist">
+            <li>Username con formato correcto</li>
+            <li>Mayor de 18 años</li>
+            <li>Contraseña segura</li>
+            <li>Confirmación de contraseña</li>
+          </ul>
+          <p class="hint">
+            Más adelante conectaremos este formulario a PHP + MySQL con consultas preparadas y <code>password_hash()</code>.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> FitTrack · Ingeniería Web 1</p>
+      <p class="footer-links">
+        <a href="index.html#features">Funcionalidades</a>
+        <a href="index.html#how">Cómo funciona</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
