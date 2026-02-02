@@ -21,9 +21,8 @@
         <a href="index.html#how">Cómo funciona</a>
         <a class="btn btn--outline" href="register.html">Crear cuenta</a>
       </nav>
-
+      
       <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
       </button>
     </div>
   </header>
@@ -32,10 +31,7 @@
     <div class="container auth-grid">
       <section class="auth-card" aria-label="Formulario de login">
         <h1>Iniciar sesión</h1>
-        <p class="section-lead">Accede para ver tu dashboard.</p>
-
-        <!-- Preparado para PHP más adelante: action="php/login.php" method="POST" -->
-        <form id="loginForm" class="form" novalidate>
+        <form id="loginForm" class="form" action="php/login.php" method="POST" novalidate>
           <div class="field">
             <label for="loginUser">Nombre de usuario</label>
             <input
@@ -70,32 +66,18 @@
               ¿No tienes cuenta? <a class="link" href="register.html">Regístrate</a>
             </p>
           </div>
-
           <p class="form-success" id="loginSuccess" aria-live="polite"></p>
         </form>
       </section>
-
-      <aside class="auth-aside" aria-label="Información de acceso">
-        <div class="aside-card">
-          <h2>Demo (sin backend aún)</h2>
-          <p class="hint">
-            De momento el login es visual (front). Cuando metamos PHP:
-            validaremos en servidor y crearemos sesión segura.
-          </p>
-          <p class="hint">
-            Tip: En tu README puedes explicar qué parte funciona en cliente y qué parte se añadirá en backend.
-          </p>
-        </div>
-      </aside>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> FitTrack · Ingeniería Web 1</p>
+      <p>© <span id="year"></span> FitTrack · UAX - Ingeniería Web 1</p>
+      <p> Jairo Hernández</p>
       <p class="footer-links">
-        <a href="index.html#features">Funcionalidades</a>
-        <a href="index.html#how">Cómo funciona</a>
+        <a href="index.html">Home</a>
       </p>
     </div>
   </footer>

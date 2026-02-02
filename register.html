@@ -34,8 +34,7 @@
         <h1>Crear cuenta</h1>
         <p class="section-lead">Regístrate para empezar a guardar tus entrenamientos.</p>
 
-        <!-- Preparado para PHP más adelante: action="php/register.php" method="POST" -->
-        <form id="registerForm" class="form" novalidate>
+        <form id="registerForm" class="form" action="php/register.php" method="POST" novalidate>
           <div class="field">
             <label for="username">Nombre de usuario</label>
             <input
@@ -43,7 +42,7 @@
               name="username"
               type="text"
               autocomplete="username"
-              placeholder="Ej: jairo_ibz"
+              placeholder="Ej: jairo_hernandez"
               minlength="3"
               maxlength="20"
               required
@@ -104,29 +103,32 @@
         </form>
       </section>
 
-      <aside class="auth-aside" aria-label="Información del registro">
-        <div class="aside-card">
-          <h2>Qué valida este formulario</h2>
-          <ul class="checklist">
-            <li>Username con formato correcto</li>
-            <li>Mayor de 18 años</li>
-            <li>Contraseña segura</li>
-            <li>Confirmación de contraseña</li>
-          </ul>
-          <p class="hint">
-            Más adelante conectaremos este formulario a PHP + MySQL con consultas preparadas y <code>password_hash()</code>.
-          </p>
-        </div>
-      </aside>
+      <aside class="auth-aside" aria-label="Beneficios de registrarte">
+  <div class="aside-card">
+    <h2>Estás a un paso de empezar</h2>
+    <p class="lead">
+      Crea tu cuenta y empieza a sacar partido a todo lo que <strong>FitTrack</strong> puede hacer por ti.
+    </p>
+    <ul class="checklist">
+      <li>Registra tu actividad y progreso diario</li>
+      <li>Accede a estadísticas personalizadas</li>
+      <li>Guarda tu historial de entrenamientos de forma segura</li>
+      <li>Gestiona tu perfil desde cualquier dispositivo</li>
+    </ul>
+    <p class="hint">
+      Tu información estará protegida y solo se usará para mejorar tu experiencia dentro de la plataforma.
+    </p>
+  </div>
+</aside>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> FitTrack · Ingeniería Web 1</p>
+      <p>© <span id="year"></span> FitTrack · UAX - Ingeniería Web 1</p>
+      <p> Jairo Hernández</p>
       <p class="footer-links">
-        <a href="index.html#features">Funcionalidades</a>
-        <a href="index.html#how">Cómo funciona</a>
+        <a href="index.html">Home</a>
       </p>
     </div>
   </footer>
