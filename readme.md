@@ -27,7 +27,7 @@ git clone <https://github.com/Jairuss14/IngWebI-FitTrack.git>
 ## 3) Colocar el proyecto dentro de XAMPP y arrancar el servidor
 ## 4) Importar la base de datos en /database/fittrack_db.sql en PHPMyAdmin
 ## 5) (Opcional) Configurar conexion en /php/db.php si es necesario (Credenciales)
-## 6) Acceso a la aplicación: http://localhost/JAIROHERNANDEZ_PROYECTOFINAL_WEBAPP/index.html
+## 6) Acceso a la aplicación: http://localhost/IngWebI-FitTrack/index.html
 ## 7) Registrarse en la aplicación y acceder al dashboard
 ## 8) Modificar los datos del perfil 
 ## 9) Establecer objetivo 
