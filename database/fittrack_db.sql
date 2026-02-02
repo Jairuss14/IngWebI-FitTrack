@@ -75,13 +75,6 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `users`
---
-
-INSERT INTO `users` (`id`, `username`, `full_name`, `email`, `bio`, `avatar_path`, `password_hash`, `dob`, `created_at`) VALUES
-(1, 'jairohn', NULL, NULL, NULL, 'uploads/avatars/u1_d5e927c3610f0943.jpg', '$2y$10$e.gBsHMhz4t3.5rBHppWwOos/A5ylm6jO8R933RHeu5OovB20dBjS', '2003-04-09', '2026-02-01 17:24:34');
-
---
 -- Índices para tablas volcadas
 --
 

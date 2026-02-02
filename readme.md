@@ -32,7 +32,12 @@ git clone <https://github.com/Jairuss14/IngWebI-FitTrack.git>
 ## 8) Modificar los datos del perfil 
 ## 9) Establecer objetivo 
 ## 10) Registrar actividades
-
+## 11) Extra: Node.js -
+    Iniciar Servidor 
+    Realizar petición GET a /stats/today/<userid>
+    Este devuelve el total de actividades realizadas por el usuario ese dia en formato JSON
+    
+    
 
 
 
