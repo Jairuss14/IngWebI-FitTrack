@@ -1,7 +1,7 @@
 # FitTrack · Proyecto Full Stack (Ingeniería Web I)
 
 FitTrack es una aplicación web sencilla para el registro y seguimiento de actividades deportivas.  
-Incluye: **Landing**, **Registro/Login**, **Dashboard con historial**, **Perfil de usuario (avatar)**, **Objetivos con progreso** y una **micro-API opcional en Node.js**.
+Incluye: **Landing**, **Registro/Login**, **Dashboard con historial**, **Perfil de usuario**, **Objetivos con progreso** y una **micro-API en Node.js**.
 
 ---
 
@@ -20,16 +20,18 @@ Incluye: **Landing**, **Registro/Login**, **Dashboard con historial**, **Perfil 
 ## 2) Clonar el repositorio
 
 ```bash
-git clone <>
+git clone <https://github.com/Jairuss14/IngWebI-FitTrack.git>
+
+```
 
 ## 3) Colocar el proyecto dentro de XAMPP y arrancar el servidor
-## 3) Importar la base de datos en /database/fittrack_db.sql en PHPMyAdmin
-## 4) (Opcional) Configurar conexion en /php/db.php si es necesario (Credenciales)
-## 5) Acceso a la aplicación: http://localhost/JAIROHERNANDEZ_PROYECTOFINAL_WEBAPP/index.html
-## 6) Registrarse en la aplicación y acceder al dashboard
-## 7) Modificar los datos del perfil 
-## 8) Establecer objetivo 
-## 9) Registrar actividades
+## 4) Importar la base de datos en /database/fittrack_db.sql en PHPMyAdmin
+## 5) (Opcional) Configurar conexion en /php/db.php si es necesario (Credenciales)
+## 6) Acceso a la aplicación: http://localhost/JAIROHERNANDEZ_PROYECTOFINAL_WEBAPP/index.html
+## 7) Registrarse en la aplicación y acceder al dashboard
+## 8) Modificar los datos del perfil 
+## 9) Establecer objetivo 
+## 10) Registrar actividades
 
 
 
